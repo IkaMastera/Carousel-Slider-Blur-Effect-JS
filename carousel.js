@@ -37,4 +37,10 @@ const showSlider = (type) => {
     }, 2000);
 }
 
+seeMoreButtons.forEach(buttons => {
+    buttons.onclick = function(){
+        carousel.classList.add('showDetail');
+    }
+})
+
 
