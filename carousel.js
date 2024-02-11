@@ -43,4 +43,8 @@ seeMoreButtons.forEach(buttons => {
     }
 })
 
+backButton.onclick = function(){
+    carousel.classList.remove('showDetail');
+}
+
 
