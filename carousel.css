@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +37,7 @@ a{
 }
 
 header{
-    width: 1140px;
+    width: 1530px;
     max-width: 90%;
     margin: auto;
     height: 50px;
@@ -157,7 +156,7 @@ header nav a{
 .arrows{
     position: absolute;
     bottom: 10px;
-    width: 1140px;
+    width: 1530px;
     max-width: 90%;
     left: 50%;
     transform: translateX(-50%);
@@ -296,3 +295,33 @@ header nav a{
         opacity: var(--item5-opacity);
     }
 }
+
+/* prev click effect */
+
+.carousel.prev .list .item:nth-child(2){
+    animation: positionItem1 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes positionItem1 {
+    from{
+        transform: var(--item1-transform);
+        filter: var(--item1-filter);
+        z-index: var(--item1-zIndex);
+        opacity: var(--item1-opacity);
+    }
+}
+
+.carousel.prev .list .item:nth-child(3) {
+    animation: positionItem2 0.7s ease-in-out 1 forwards;
+}
+
+.carousel.prev .list .item:nth-child(4) {
+    animation: positionItem3 0.9s ease-in-out 1 forwards;
+}
+
+.carousel.prev .list .item:nth-child(5) {
+    animation: positionItem4 1.1s ease-in-out 1 forwards;
+}
+
+
+
